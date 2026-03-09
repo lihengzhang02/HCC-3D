@@ -1,5 +1,5 @@
 <p align="center">
-# HCC-3D: Hierarchical Compensatory Compression for 98% 3D Token Reduction in Vision-Language Models
+<h1 align="center"><strong>HCC-3D: Hierarchical Compensatory Compression for 98% 3D Token Reduction in Vision-Language Models</strong></h1>
   <p align="center">
   Liheng Zhang<sup>1</sup>, Jin Wang<sup>1</sup>, Hui Li<sup>2</sup>, Bingfeng Zhang<sup>1†</sup>, Weifeng Liu<sup>1</sup>
   <br>
