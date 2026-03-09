@@ -34,17 +34,6 @@ HCC-3D employs a **dual-path hierarchical compression** strategy:
 - **Global Structure Compression (GSC):** `ng=8` learnable spatial queries attend over all 513 input tokens via multi-head cross-attention, producing a compact global representation that preserves overall 3D geometry.
 - **Adaptive Detail Mining (ADM):** Identifies under-attended but semantically rich regions missed by GSC using a complementary scoring mechanism (attention coverage × MLP importance), selects the top-K=96 features, and recompresses them into 4 detail tokens — yielding **12 tokens total**.
 
-## Results
-
-![result](media/result.png)
-
-### Efficiency
-
-| Method | GPU | Training Time | Inference Speed |
-|--------|-----|:---:|:---:|
-| MiniGPT-3D | 1×RTX4090 (24G) | 16.8h | 0.45s/sample |
-| **HCC-3D** | **1×RTX4090 (24G)** | **11.9h** | **0.36s/sample** |
-
 ## Getting Started
 
 ### Installation
