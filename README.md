@@ -27,7 +27,7 @@
 
 ## Method
 
-![architecture](assets/architecture.png)
+![architecture](media/architecture.png)
 
 HCC-3D employs a **dual-path hierarchical compression** strategy:
 
