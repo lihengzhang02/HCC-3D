@@ -18,8 +18,6 @@
 - **[2026/03]** 🚀 Code and model checkpoints are released.
 - **[2026/01]** 🎉 HCC-3D is accepted by **AAAI 2026**.
 
----
-
 ## Highlights
 
 - 🗜️ **98% token compression**: HCC-3D reduces 3D visual tokens from **513 → 12** — the most aggressive compression among all existing 3D-VLMs.
