@@ -13,19 +13,19 @@
     <a href='https://huggingface.co/Lh9992/HCC-3D'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 </p>
 
-## News
+## 📰 News
 
 - **[2026/03]** 🚀 Code and model checkpoints are released.
 - **[2026/01]** 🎉 HCC-3D is accepted by **AAAI 2026**.
 
-## Highlights
+## ✨ Highlights
 
 - 🗜️ **98% token compression**: HCC-3D reduces 3D visual tokens from **513 → 12** — the most aggressive compression among all existing 3D-VLMs.
 - 🏆 **State-of-the-art**: Outperforms MiniGPT-3D by **+1.04%** on ModelNet40 and **+1.00%** on Objaverse classification.
 - ⚡ **52% faster training** and **20% faster inference** vs. MiniGPT-3D, running on a **single RTX 4090 (24G)** in just **11.9 hours**.
 - 🔧 **Plug-and-play**: The HCC module is architecture-agnostic and generalizes across different 3D-VLM frameworks (demonstrated with GreenPLM).
 
-## Method
+## 🏗️ Method
 
 ![architecture](media/architecture.png)
 
@@ -34,9 +34,9 @@ HCC-3D employs a **dual-path hierarchical compression** strategy:
 - **Global Structure Compression (GSC):** `ng=8` learnable spatial queries attend over all 513 input tokens via multi-head cross-attention, producing a compact global representation that preserves overall 3D geometry.
 - **Adaptive Detail Mining (ADM):** Identifies under-attended but semantically rich regions missed by GSC using a complementary scoring mechanism (attention coverage × MLP importance), selects the top-K=96 features, and recompresses them into 4 detail tokens — yielding **12 tokens total**.
 
-## Getting Started
+## 🚀 Getting Started
 
-### Installation
+### 📦 Installation
 
 ```bash
 git clone https://github.com/lihengzhang02/HCC-3D.git
@@ -48,7 +48,7 @@ bash env_install.sh
 
 Tested environment: 1× RTX 4090 24GB / Ubuntu 20.04 / CUDA 11.8 / Python 3.9 / PyTorch 2.0.0
 
-### Data Preparation
+### 🗂️ Data Preparation
 
 Download all data files (~78GB) from [PointLLM HuggingFace Datasets](https://huggingface.co/datasets/RunsenXu/PointLLM/tree/main).
 
@@ -76,7 +76,7 @@ HCC-3D/data
     └── ...
 ```
 
-### Model Weights
+### 🤗 Model Weights
 
 Download from [HuggingFace](https://huggingface.co/Lh9992/HCC-3D) and place under `params_weight/`:
 
@@ -90,7 +90,7 @@ params_weight/
 └── sup-simcse-roberta-large/ # Captioning evaluation
 ```
 
-## Training
+## 🎯 Training
 
 ```bash
 export PYTHONPATH=$PWD
@@ -108,7 +108,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --cfg-path ./train_configs/HCC_3D/stage_3
 CUDA_VISIBLE_DEVICES=0 python train.py --cfg-path ./train_configs/HCC_3D/stage_4.yaml
 ```
 
-## Evaluation
+## 📊 Evaluation
 
 ### Step 1 — Generate outputs
 
@@ -168,13 +168,13 @@ CUDA_VISIBLE_DEVICES=0 python hcc3d/eval/traditional_evaluator.py \
     --results_path ./output/test/Objaverse_captioning_prompt2.json
 ```
 
-## TODO
+## ☑️ TODO
 
 - [x] Release training code
 - [x] Release evaluation code
 - [x] Release model checkpoints
 
-## Citation
+## 📖 Citation
 
 ```bibtex
 @inproceedings{zhang2026hcc3d,
@@ -185,7 +185,7 @@ CUDA_VISIBLE_DEVICES=0 python hcc3d/eval/traditional_evaluator.py \
 }
 ```
 
-## Related Work
+## 🔗 Related Work
 
 - [LLaVA-Mini](https://github.com/ictnlp/LLaVA-Mini): Extreme 2D vision token reduction (576 → 1) for image and video VLMs
 - [GreenPLM](https://github.com/TangYuan96/GreenPLM): 3D data-efficient point-language understanding
@@ -193,10 +193,10 @@ CUDA_VISIBLE_DEVICES=0 python hcc3d/eval/traditional_evaluator.py \
 - [PointLLM](https://github.com/OpenRobotLab/PointLLM): Empowering LLMs to understand point clouds
 - [ShapeLLM](https://arxiv.org/abs/2402.17766): 3D object understanding for embodied interaction
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 We thank the authors of [PointLLM](https://github.com/OpenRobotLab/PointLLM), [MiniGPT-3D](https://github.com/TangYuan96/MiniGPT-3D), [GreenPLM](https://github.com/TangYuan96/GreenPLM), and [Point-BERT](https://github.com/lulutang0608/Point-BERT) for their excellent open-source work that this project builds upon.
 
-## License
+## 📜 License
 
 This project is released under the [CC BY-NC 4.0 License](LICENSE).
