@@ -6,14 +6,12 @@ Liheng Zhang<sup>1</sup>, Jin Wang<sup>1</sup>, Hui Li<sup>2</sup>, Bingfeng Zha
 
 <sup>1</sup> China University of Petroleum (East China) &nbsp; <sup>2</sup> The Hong Kong Polytechnic University &nbsp; <sup>†</sup> Corresponding Author
 
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
-[![GitHub](https://img.shields.io/badge/GitHub-HCC--3D-black?logo=github)](https://github.com/lihengzhang02/HCC-3D)
-[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Model-yellow)](https://huggingface.co/lihengzhang02/HCC-3D)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey)](LICENSE)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hcc-3d/generative-3d-object-classification-on-2)](https://paperswithcode.com/sota/generative-3d-object-classification-on-2)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hcc-3d/generative-3d-object-classification-on-1)](https://paperswithcode.com/sota/generative-3d-object-classification-on-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hcc-3d/3d-object-captioning-on-objaverse-1)](https://paperswithcode.com/sota/3d-object-captioning-on-objaverse-1)
-
+<p align="center">
+    <a><strong>AAAI 2026</strong></a>
+    <a href='https://github.com/lihengzhang02/HCC-3D'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
+    <a href='https://arxiv.org/abs/2511.09883'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+    <a href='https://huggingface.co'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
+</p>
 ---
 
 ## News
