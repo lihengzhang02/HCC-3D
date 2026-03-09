@@ -192,11 +192,6 @@ python hcc3d/eval/evaluator_qwen.py \
 CUDA_VISIBLE_DEVICES=0 python hcc3d/eval/traditional_evaluator.py \
     --results_path ./output/test/Objaverse_captioning_prompt2.json
 ```
-## Demo
-
-```bash
-python demo.py --cfg-path ./eval_configs/HCC_3D_demo.yaml --gpu-id 0
-```
 
 ## TODO
 
