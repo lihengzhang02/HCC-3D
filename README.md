@@ -56,8 +56,6 @@ HCC-3D employs a **dual-path hierarchical compression** strategy:
 
 | Method | GPU | Training Time | Inference Speed |
 |--------|-----|:---:|:---:|
-| PointLLM-13B | 8×A100 (80G) | 213h | ~3.45s/sample |
-| ShapeLLM-13B | 8×A800 (80G) | 160h | ~2.04s/sample |
 | MiniGPT-3D | 1×RTX4090 (24G) | 16.8h | 0.45s/sample |
 | **HCC-3D** | **1×RTX4090 (24G)** | **11.9h** | **0.36s/sample** |
 
