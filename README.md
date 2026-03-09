@@ -1,18 +1,17 @@
+<p align="center">
 # HCC-3D: Hierarchical Compensatory Compression for 98% 3D Token Reduction in Vision-Language Models
-
-**AAAI 2026**
-
-Liheng Zhang<sup>1</sup>, Jin Wang<sup>1</sup>, Hui Li<sup>2</sup>, Bingfeng Zhang<sup>1†</sup>, Weifeng Liu<sup>1</sup>
-
+  <p align="center">
+  Liheng Zhang<sup>1</sup>, Jin Wang<sup>1</sup>, Hui Li<sup>2</sup>, Bingfeng Zhang<sup>1†</sup>, Weifeng Liu<sup>1</sup>
+  <br>
 <sup>1</sup> China University of Petroleum (East China) &nbsp; <sup>2</sup> The Hong Kong Polytechnic University &nbsp; <sup>†</sup> Corresponding Author
-
+  </p>
+</p>
 <p align="center">
     <a><strong>AAAI 2026</strong></a>
     <a href='https://github.com/lihengzhang02/HCC-3D'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
     <a href='https://arxiv.org/abs/2511.09883'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
     <a href='https://huggingface.co'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 </p>
----
 
 ## News
 
