@@ -10,7 +10,7 @@
     <a><strong>AAAI 2026</strong></a>
     <a href='https://github.com/lihengzhang02/HCC-3D'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
     <a href='https://arxiv.org/abs/2511.09883'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
-    <a href='https://huggingface.co'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
+    <a href='https://huggingface.co/Lh9992/HCC-3D'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 </p>
 
 ## News
@@ -78,7 +78,7 @@ HCC-3D/data
 
 ### Model Weights
 
-Download from [HuggingFace](https://huggingface.co/lihengzhang02/HCC-3D) and place under `params_weight/`:
+Download from [HuggingFace](https://huggingface.co/Lh9992/HCC-3D) and place under `params_weight/`:
 
 ```
 params_weight/
