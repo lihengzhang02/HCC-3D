@@ -25,8 +25,6 @@
 - ⚡ **52% faster training** and **20% faster inference** vs. MiniGPT-3D, running on a **single RTX 4090 (24G)** in just **11.9 hours**.
 - 🔧 **Plug-and-play**: The HCC module is architecture-agnostic and generalizes across different 3D-VLM frameworks (demonstrated with GreenPLM).
 
----
-
 ## Method
 
 ![architecture](assets/architecture.png)
@@ -35,8 +33,6 @@ HCC-3D employs a **dual-path hierarchical compression** strategy:
 
 - **Global Structure Compression (GSC):** `ng=8` learnable spatial queries attend over all 513 input tokens via multi-head cross-attention, producing a compact global representation that preserves overall 3D geometry.
 - **Adaptive Detail Mining (ADM):** Identifies under-attended but semantically rich regions missed by GSC using a complementary scoring mechanism (attention coverage × MLP importance), selects the top-K=96 features, and recompresses them into 4 detail tokens — yielding **12 tokens total**.
-
----
 
 ## Results
 
@@ -64,8 +60,6 @@ HCC-3D employs a **dual-path hierarchical compression** strategy:
 | ShapeLLM-13B | 8×A800 (80G) | 160h | ~2.04s/sample |
 | MiniGPT-3D | 1×RTX4090 (24G) | 16.8h | 0.45s/sample |
 | **HCC-3D** | **1×RTX4090 (24G)** | **11.9h** | **0.36s/sample** |
-
----
 
 ## Getting Started
 
@@ -123,8 +117,6 @@ params_weight/
 └── sup-simcse-roberta-large/ # Captioning evaluation
 ```
 
----
-
 ## Training
 
 ```bash
@@ -142,8 +134,6 @@ CUDA_VISIBLE_DEVICES=0 python train.py --cfg-path ./train_configs/HCC_3D/stage_3
 # Stage IV:
 CUDA_VISIBLE_DEVICES=0 python train.py --cfg-path ./train_configs/HCC_3D/stage_4.yaml
 ```
-
----
 
 ## Evaluation
 
@@ -204,16 +194,11 @@ python hcc3d/eval/evaluator_qwen.py \
 CUDA_VISIBLE_DEVICES=0 python hcc3d/eval/traditional_evaluator.py \
     --results_path ./output/test/Objaverse_captioning_prompt2.json
 ```
-
----
-
 ## Demo
 
 ```bash
 python demo.py --cfg-path ./eval_configs/HCC_3D_demo.yaml --gpu-id 0
 ```
-
----
 
 ## TODO
 
@@ -222,8 +207,6 @@ python demo.py --cfg-path ./eval_configs/HCC_3D_demo.yaml --gpu-id 0
 - [x] Release model checkpoints
 - [ ] Release Gradio demo
 - [ ] HuggingFace Spaces online demo
-
----
 
 ## Citation
 
@@ -236,8 +219,6 @@ python demo.py --cfg-path ./eval_configs/HCC_3D_demo.yaml --gpu-id 0
 }
 ```
 
----
-
 ## Related Work
 
 - [LLaVA-Mini](https://github.com/ictnlp/LLaVA-Mini): Extreme 2D vision token reduction (576 → 1) for image and video VLMs
@@ -245,8 +226,6 @@ python demo.py --cfg-path ./eval_configs/HCC_3D_demo.yaml --gpu-id 0
 - [MiniGPT-3D](https://github.com/TangYuan96/MiniGPT-3D): Efficient 3D-LLM alignment with 2D priors
 - [PointLLM](https://github.com/OpenRobotLab/PointLLM): Empowering LLMs to understand point clouds
 - [ShapeLLM](https://arxiv.org/abs/2402.17766): 3D object understanding for embodied interaction
-
----
 
 ## Acknowledgements
 
