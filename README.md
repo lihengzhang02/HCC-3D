@@ -197,9 +197,7 @@ CUDA_VISIBLE_DEVICES=0 python hcc3d/eval/traditional_evaluator.py \
 
 - [x] Release training code
 - [x] Release evaluation code
-- [x] Release model checkpoints
-- [ ] Release Gradio demo
-- [ ] HuggingFace Spaces online demo
+- [ ] Release model checkpoints
 
 ## Citation
 
