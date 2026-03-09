@@ -36,21 +36,7 @@ HCC-3D employs a **dual-path hierarchical compression** strategy:
 
 ## Results
 
-### 3D Object Classification
-
-| Model | Venue | LLM | #Tokens | ModelNet40 | Objaverse | Avg |
-|-------|-------|-----|:-------:|:----------:|:---------:|:---:|
-| PointLLM-7B | ECCV24 | 7B | 513 | 50.85 | 62.50 | 56.68 |
-| ShapeLLM-13B | ECCV24 | 13B | 512 | 50.96 | 62.25 | 56.61 |
-| MiniGPT-3D | MM24 | 2.7B | 513 | 61.24 | 66.75 | 64.00 |
-| **HCC-3D (Ours)** | **AAAI26** | **2.7B** | **12** | **62.28** | **67.75** | **65.02** |
-
-### 3D Object Captioning (Objaverse)
-
-| Model | Venue | #Tokens | Qwen2 | Sentence-BERT | SimCSE | Avg |
-|-------|-------|:-------:|:-----:|:-------------:|:------:|:---:|
-| MiniGPT-3D | MM24 | 513 | 48.17 | 49.54 | 51.39 | 49.70 |
-| **HCC-3D (Ours)** | **AAAI26** | **12** | **48.72** | **50.89** | 50.84 | **50.15** |
+![result](media/result.png)
 
 ### Efficiency
 
