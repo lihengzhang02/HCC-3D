@@ -1,1 +1,16 @@
+model:
+  arch: minigpt_3d
+  model_type: pretrain
+  max_txt_len: 500  
+  end_sym: "###"
+  prompt_template: 'Instruct: {} /n Output: '
+  llama_model: "./params_weight/Phi_2"
+  ckpt: './output/test/stage_3/checkpoint_2.pth'
+  second_ckpt: "./output/test/stage_4/checkpoint_0.pth"
+  lora_r: 64
+  lora_alpha: 16
+  pc_linear_layer: 2
+  use_MQE: False  #  False: not use  query expert
 
+
+evaluation_flag: True
